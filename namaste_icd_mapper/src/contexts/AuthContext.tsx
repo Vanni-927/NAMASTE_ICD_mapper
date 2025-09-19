@@ -21,7 +21,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  const login = async (abhaToken: string): Promise<boolean> => {
+  const login = async (_abhaToken: string): Promise<boolean> => {
     setIsLoading(true);
 
     try {
